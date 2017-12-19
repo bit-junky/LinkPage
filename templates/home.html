@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<title>HSBC India: Personal, Corporate Banking, Credit Cards, NRI Services | HSBC India</title>
+	</head>
+	<body>
+		<div class="page-header">
+			<div class="branding">
+				<span><img src="{{ url_for('static', filename = 'hsbclogo.png') }}"></span> HSBC
+			</div>
+		</div>
+		<div class="sidebar">
+			<ul class="side-nav">
+				<li><a href=#>Account Information</a></li>
+				<li><a href=#>Transfer</a></li>
+				<li><a href=#>Payment and Wire</a></li>
+				<li><a href="{{ url_for('link') }}">Link Twitter</a></li>
+			</ul>	
+		</div>
+		<div class="content">
+			<h3>Welcome {{ key }}</h3>
+			<p>You can access your Internet Banking options here</p>
+		</div>
+	</body>
+</html>
